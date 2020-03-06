@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>表单</title>
+    <meta charest="UTF-8">
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        form {
+            width: 500px;
+            margin: 20px auto;
+        }
+        
+        form>fieldset {
+            padding: 10px;
+        }
+        
+        form>fieldset>meter,
+        form>fieldset>input {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            margin: 10px auto;
+            border-radius: 4px;
+            font-size: 16px;
+            padding-left: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>学生信息</h1>
+    <form id="information" method=" " action=" ">
+        <fieldset>
+            <legend style="color:red">学生档案</legend>
+
+            <br/>
+
+    </form>
+    <lable for="userName">姓名：</lable>
+    <br/>
+    <input type="name" name="name1" required placeholder="请输入姓名" autofocus="autofocus" autocomplete="off">
+    <span style="color:red">*</span>
+
+    <lable for="userNumber">学号：</lable>
+    <br/>
+    <input type="number" name="name1" required placeholder="请输入学号" autofocus="autofocus" autocomplete="off">
+    <span style="color:red">*</span>
+
+    <lable for="userPhone">手机号码：</lable>
+    <br/>
+    <input type="number" name="name1" required placeholder="请输入手机号码" autofocus="autofocus" autocomplete="off">
+    <span style="color:red">*</span>
+
+    <lable for="useEmail">邮箱地址：</lable>
+    <br/>
+    <input type="text" name="name1" required placeholder="请输入邮箱地址" autofocus="autofocus" autocomplete="off">
+    <span style="color:red">*</span>
+
+    <lable for="school">录取学校：</lable>
+    <br/>
+    <input type="schoolName" id="schoolName" list="schoolNameList">
+    <datalist id="schoolNameList">
+        <option value="A大学"/>
+        <option value="B大学"/>
+        <option value="C大学"/>
+        <option value="D大学"/>
+        <option value="E大学"/>
+    </datalist>
+
+    <lable for="score">入学成绩：</lable>
+    <br/>
+    <input type="text" name="name1" autofocus="autofocus" autocomplete="off">
+
+    <lable for="time">入学时间：</lable>
+    <br/>
+    <input type="text" name="name1" required placeholder="年/月/日" autofocus="autofocus" autocomplete="off">
+
+    <input type="submit" value="提交">
+
+    </fieldset>
+
+    <script>
+        var schoolName = document.getElementById('schoolName');
+        var schoolNameList = document.getElementById('schoolNameList');
+        var option = document.getElementsByTagName('option');
+    </script>
+
+</body>
+
+</html>
